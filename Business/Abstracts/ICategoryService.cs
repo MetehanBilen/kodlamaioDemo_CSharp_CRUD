@@ -11,7 +11,7 @@ public interface ICategoryService
 {
     void Add(Category category);
 
-    Category GetCategoryById(int id);
+    Category GetCategoryById(Guid id);
     List<Category> GetAll();
 
     void Update(Category category);

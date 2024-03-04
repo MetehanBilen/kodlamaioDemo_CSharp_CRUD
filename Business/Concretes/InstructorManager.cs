@@ -33,7 +33,7 @@ public class InstructorManager : IInstructorService
        return _ınstructorDal.GetAll();
     }
 
-    public Instructor GetInstructorById(int id)
+    public Instructor GetInstructorById(Guid id)
     {
         return _ınstructorDal.GetInstructorById(id);
     }

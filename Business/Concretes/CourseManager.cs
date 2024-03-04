@@ -33,7 +33,7 @@ public class CourseManager : ICourseService
         return _courseDal.GetAll();
     }
 
-    public Course GetCourseById(int id)
+    public Course GetCourseById(Guid id)
     {
         return _courseDal.GetCourseById(id);
     }

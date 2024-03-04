@@ -16,12 +16,12 @@ public class CategoryDal: ICategoryDal
     {
         
         Category category1 = new Category();
-        category1.Id = 1;
+        category1.Id = new Guid("56a509ba-0155-41b3-b467-7bd519af2aab");
         category1.Name = "BackEnd";
 
 
         Category category2 = new Category();
-        category2.Id = 2;
+        category2.Id = new Guid("44d3956c-5e4f-4a2a-bab6-4a66a84a6959");
         category2.Name = "FrontEnd";
 
 
@@ -43,7 +43,7 @@ public class CategoryDal: ICategoryDal
         return _categories;
     }
 
-    public Category GetCategoryById(int id)
+    public Category GetCategoryById(Guid id)
     {
         return _categories.SingleOrDefault(c => c.Id == id);
     }

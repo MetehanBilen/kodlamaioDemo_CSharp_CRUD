@@ -11,7 +11,7 @@ public interface IInstructorService
 {
     void Add(Instructor instructor);
 
-    Instructor GetInstructorById(int id);
+    Instructor GetInstructorById(Guid id);
     List<Instructor> GetAll();
 
     void Update(Instructor instructor);
